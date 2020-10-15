@@ -11,7 +11,7 @@ public class Cliente extends Thread {
                         Main.barradelbar.remove(0);
                         sleep(2000);
                     }else{
-                        Main.barradelbar.notify();
+                        Main.barradelbar.notify(); //Avisa de que ha acabado el proceso
                     }
                 }
             } catch (InterruptedException e) {

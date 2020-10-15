@@ -11,15 +11,16 @@ public class Camarero extends Thread {
                 String cocacola = "Coca-cola";
                 Main.barradelbar.add(cocacola);
                 System.out.println("Voy a añadir una " + cocacola);
-                sleep(1000);
+
                 String fanta = "Fanta";
                 Main.barradelbar.add(fanta);
                 System.out.println("Voy a añadir una " + fanta);
-                sleep(1000);
+
                 String vino = "vino";
                 Main.barradelbar.add(vino);
                 System.out.println("Voy a añadir un " + vino);
-                sleep(1000);
+                sleep(5000);
+                    Main.barradelbar.notify();
             }
             } catch (InterruptedException e) {
                 e.printStackTrace();
